@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    // <div>
+    <div>
       <div className='flex justify-between items-center p-4'>
         <div>
             <Image src="/logo.png" width="100" height="100" alt="logo" />
@@ -58,7 +58,7 @@ const Header = () => {
 
 
         {/* </div> */}
-    // </div>
+    </div>
 
   )
 }
