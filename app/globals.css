@@ -54,12 +54,55 @@ body {
   position: relative;
 }
 
+
+@media screen and (max-width: 991px) {
+  .banner-left {
+    width: 100%;
+    padding: 0 20px
+  }
+  .banner-right{
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  .home-banner .banner-content .banner-title h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .home-banner .banner-content .banner-text p {
+    color: #f8f8f8;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .home-banner .banner-content .banner-title h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .home-banner .banner-content .banner-text p {
+    color: #f8f8f8;
+    margin-bottom: 15px;
+  }
+}
+
 .container {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
+
+
 
 .overlay,
 .pattern-overlay {

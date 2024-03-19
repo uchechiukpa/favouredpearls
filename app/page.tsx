@@ -85,7 +85,7 @@ export default function Home() {
     <div>
         <Header />
         <section className="home-banner ">
-            <div className="container flex">
+            <div className="container flex flex-col lg:flex-row">
               {/* <div className="flex"> */}
                   <div className="banner-left">
                       <div className="image-overlay pattern-overlay"></div>
@@ -112,8 +112,8 @@ export default function Home() {
             <div className="overlay-image pattern-overlay"></div>
           </section>
         <main className="max-w-screen-xl mx-auto">
-        <div className="flex lg:flex-row flex-col mt-24 ">
-          <div className="lg:w-1/2 w-full">
+        <div className="flex lg:flex-row flex-col-reverse  mt-24 ">
+          <div className="lg:w-1/2 w-full ">
             <video width="400" height="200" controls className="video-control " >
               <source src="/welcomespeech.mp4" type="video/mp4" />
             </video>
@@ -122,9 +122,9 @@ export default function Home() {
 
 
           <div className="lg:w-1/2 w-full">
-          <div className="title-divider"></div>
-            <h2 className="text-4xl uppercase font-bold">A Welcome Speech <br/>  From Our Proprietor</h2>
-            <p className="mt-5">Our Proprietors welcomes you to favoured pearls,
+          <div className="title-divider mt-16 md:mt-5 lg:mt-0"></div>
+            <h2 className="text-4xl uppercase font-bold text-center">A Welcome Speech <br/>  From Our Proprietor</h2>
+            <p className="mt-5 mb-16 lg:mb-0">Our Proprietors welcomes you to favoured pearls,
               favoured pearls school is indeed a great school,
               for the past 17 years we have been providing top-notch educations,
               graduates of favoured pearls school are doing great things because 
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="features pt-48 ">
             <div className="title-divider text-center"></div>
             <h2 className="text-center text-3xl font-bold" >Why Favoured Pearls</h2>
-            <div className="grid grid-cols-3 grid-flow-row gap-4 mt-8 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 mt-8 ">
               {
                 data.map((item) => (
                 <div key={item.title} className="flex flex-col items-center justify-center text-center p-4 border-dashed border-2 rounded-2xl card-choices">
@@ -157,7 +157,7 @@ export default function Home() {
 
           <div>
                 <h2 className="text-center text-3xl py-20 font-bold" >Our Core Values</h2>
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     {
                       values.map(item => (
                         <div className="bg-purple-800 text-white p-4 rounded-2xl flex flex-col justify-center items-center text-center" key={item.title}>
@@ -180,7 +180,7 @@ export default function Home() {
           <section className="home-fact-section ">
                 <div className="overlay"></div>
                 <div className="container">
-                    <div className="flex items-center">
+                    <div className="flex flex-col lg:flex-row items-center ">
                         <div className="lg:w-1/2">
                             <div className="fact-section-head">
                                 <div className="title-divider"></div>
@@ -243,12 +243,12 @@ export default function Home() {
 
             <div className="my-48 flex flex-col items-center">
             <div className="title-divider text-center"></div>
-              <h2 className="text-center text-4xl font-bold capitalize "> Review's from parents </h2>
+              <h2 className="text-center text-4xl font-bold capitalize ">Review's from parents </h2>
 
               <p className="text-center  text-xl mt-5 lg:w-2/5">Parents' reviews are crucial in shaping our school's ongoing improvements. We highly value their valuable insights and contributions to our community.</p>
 
 
-              <div className="grid grid-cols-2 gap-10 mt-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
 
                   <div className="max-h-72 overflow-auto scrollbar-hide shadow-2xl p-10">
 
